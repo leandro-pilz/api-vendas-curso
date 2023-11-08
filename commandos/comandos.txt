@@ -1,0 +1,45 @@
+//intalar o typescript
+npm add typescript ts-node-dev @types/node tsconfig-paths -D
+
+//Criar o tscofig.json
+npx tsc --init --rootDir src --outDir build --esModuleInterop --resolveJsonModule --lib es6 --module commonjs --allowJs true --noImplicitAny true
+
+//Compilar arquivo
+npx tsc
+
+//Rodar o build dev, add no package.json
+"scripts": {
+  "dev": "ts-node-dev --inspect --transpile-only --ignore-watch node_modules src/server.ts"
+}
+
+//ESLint
+npm add -D eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin
+
+//Prettier
+npm add prettier -D
+
+//Configurar o prettier
+npm add eslint-config-prettier@6.15.0 eslint-plugin-prettier@3.2.0 -D
+
+//EXPRESS
+npm add express cors express-async-errors
+npm add -D @types/express @types/cors
+
+//TYPE ORM
+npm add typeorm reflect-metadata pg
+npm add -D tsconfig-paths
+
+//Create migrations examples
+npx typeorm migration:create -n CreateProducts
+
+//Rodar as migrações pendentes
+npm run typeorm migration:run
+
+
+//Rodar aplicação
+node build/server.js --prod
+npx run dev --desenv
+
+
+//Docker
+docker run --name postgres -e POSTGRES_PASSWORD=docker -p 5432:5432 -d postgres
