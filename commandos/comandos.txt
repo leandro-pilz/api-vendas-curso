@@ -35,6 +35,9 @@ npx typeorm migration:create -n CreateProducts
 //Rodar as migrações pendentes
 npm run typeorm migration:run
 
+//Reverter a ultima migration
+npm run typeorm migration:revert
+
 
 //Rodar aplicação
 node build/server.js --prod
