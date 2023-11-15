@@ -44,5 +44,6 @@ node build/server.js --prod
 npx run dev --desenv
 
 
-//Docker
-docker run --name postgres -e POSTGRES_PASSWORD=docker -p 5432:5432 -d postgres
+//Celebrate, lib para validar dados.
+npm install celebrate
+npm add -D @types/joi
