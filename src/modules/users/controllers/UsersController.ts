@@ -1,7 +1,6 @@
 import { Request, Response } from 'express';
 import ListUserService from '../services/ListUserService';
 import CreateUserSevice from '../services/CreateUserService';
-import UpdateUserAvatarService from '../services/UpdateUserAvatarService';
 
 export default class UsersController {
   public async getAll(request: Request, response: Response): Promise<Response> {
