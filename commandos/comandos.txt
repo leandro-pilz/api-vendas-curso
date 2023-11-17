@@ -37,6 +37,10 @@ npm add -D @types/bcryptjs
 npm i jsonwebtoken
 npm add -D @types/jsonwebtoken
 
+//Multer
+npm i multer
+npm add -D @types/multer
+
 //Create migrations examples
 npx typeorm migration:create -n CreateProducts
 
