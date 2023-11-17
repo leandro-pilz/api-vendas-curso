@@ -5,7 +5,7 @@ import ProductsController from '../controllers/ProductsController';
 const productsRouter = Router();
 const productsController = new ProductsController();
 
-productsRouter.get('/', productsController.findAll);
+productsRouter.get('/', productsController.getAll);
 
 productsRouter.get(
   '/:id',
@@ -14,7 +14,7 @@ productsRouter.get(
       id: Joi.string().uuid().required(),
     },
   }),
-  productsController.findOne,
+  productsController.getOne,
 );
 
 productsRouter.post(

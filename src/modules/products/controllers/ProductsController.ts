@@ -6,7 +6,7 @@ import UpdateProductService from '../services/UpdateProductService';
 import DeleteProductService from '../services/DeleProductService';
 
 export default class ProductsController {
-  public async findAll(request: Request, response: Response): Promise<Response> {
+  public async getAll(request: Request, response: Response): Promise<Response> {
     const listProductService = new ListProductService();
 
     const products = await listProductService.execute();
@@ -14,7 +14,7 @@ export default class ProductsController {
     return response.json(products);
   }
 
-  public async findOne(request: Request, response: Response): Promise<Response> {
+  public async getOne(request: Request, response: Response): Promise<Response> {
     const { id } = request.params;
 
     const findOneProductService = new FindOneProductService();

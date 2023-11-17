@@ -29,6 +29,13 @@ npm add -D @types/express @types/cors
 npm add typeorm reflect-metadata pg
 npm add -D tsconfig-paths
 
+//Bcrypt
+npm install bcryptjs
+npm add -D @types/bcryptjs
+
+//JWT
+npm install
+
 //Create migrations examples
 npx typeorm migration:create -n CreateProducts
 
