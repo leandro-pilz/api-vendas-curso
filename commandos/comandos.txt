@@ -34,7 +34,8 @@ npm install bcryptjs
 npm add -D @types/bcryptjs
 
 //JWT
-npm install
+npm i jsonwebtoken
+npm add -D @types/jsonwebtoken
 
 //Create migrations examples
 npx typeorm migration:create -n CreateProducts
