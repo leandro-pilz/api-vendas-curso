@@ -25,7 +25,7 @@ export default class ResetPasswordService {
       throw new AppError('Token expired.', 400);
     }
 
-    const user = await userRepository.findById(userToken.id);
+    const user = await userRepository.findById(userToken.userId);
     if (!user) {
       throw new AppError('User does not exists.', 404);
     }

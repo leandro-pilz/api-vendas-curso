@@ -44,6 +44,10 @@ npm add -D @types/multer
 //Date-fns
 npm i date-fns
 
+//Serviço de email fake
+npm install nodemailer
+npm add -D @types/nodemailer
+
 
 //Create migrations examples
 npx typeorm migration:create -n CreateProducts
