@@ -41,6 +41,10 @@ npm add -D @types/jsonwebtoken
 npm i multer
 npm add -D @types/multer
 
+//Date-fns
+npm i date-fns
+
+
 //Create migrations examples
 npx typeorm migration:create -n CreateProducts
 
