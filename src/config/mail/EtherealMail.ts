@@ -6,7 +6,7 @@ interface ITemplateValiable {
 }
 
 interface IParseMailTemplate {
-  template: string;
+  file: string;
   variables: ITemplateValiable;
 }
 
