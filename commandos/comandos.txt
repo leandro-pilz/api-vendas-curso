@@ -48,6 +48,11 @@ npm i date-fns
 npm install nodemailer
 npm add -D @types/nodemailer
 
+//Montar e-mail dinâmico
+npm install handlebars
+
+
+
 
 //Create migrations examples
 npx typeorm migration:create -n CreateProducts
