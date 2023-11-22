@@ -32,5 +32,4 @@ export default class UserRepository extends Repository<User> {
 
     return user;
   }
-  //   constructor(private readonly userService: UserService) {}
 }
